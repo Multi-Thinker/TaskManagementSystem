@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Silkscreen&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f4f4f6 0% 0% no-repeat padding-box;
+}
+
+.striked {
+  text-decoration-thickness: 4px;
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  color: #707070 !important;
+}
+
+[type="checkbox"]:checked + .checkbox-overlay:before {
+  content: "✓";
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 5px;
+  top: -7px;
+  font-size: 18px;
+}
+.checkbox-overlay {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #95a4ab;
+  border-radius: 4px;
+}
+.checkboxinput {
+  width: 19px;
+  height: 19px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+}
+.checkboxContainer {
+  position: relative;
+  width: 19px;
+  height: 19px;
+}
